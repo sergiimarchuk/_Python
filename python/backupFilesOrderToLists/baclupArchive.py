@@ -43,9 +43,7 @@ def listingFileFunct1():
                   print()
                   print("Next dir for finding files is : - ")
                   
-print()
-#print( ' - - - - -' )
-print()
+print('\n' * 2)
 
 #listingFileFunct1()
 
