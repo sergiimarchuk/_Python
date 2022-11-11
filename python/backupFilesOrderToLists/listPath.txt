@@ -1,0 +1,4 @@
+/tmp
+/opt/
+/opt/test-txt
+/var/
