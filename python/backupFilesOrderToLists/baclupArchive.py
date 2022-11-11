@@ -5,9 +5,6 @@ import shutil
 
 print ('Number of arguments:', len(sys.argv), 'arguments.')
 print ('Argument List:', str(sys.argv))
-#print(sys.argv[1])
-
-
 
 def listingFileFunct1():
   with open("listFile.txt", "rb") as lf:
@@ -22,8 +19,6 @@ def listingFileFunct1():
                         for filename in fnmatch.filter(filenames, var_path.rstrip().decode("utf-8")):
                               collected.append(os.path.join(root, filename))
                   for i in collected:
-                        #print(type(i))
-                        
                         if var_path.rstrip().decode("utf-8")[-3:] in i:
                               print(i)
                              
@@ -32,21 +27,13 @@ def listingFileFunct1():
                                   shutil.copy(i, sys.argv[1])
                                 except shutil.SameFileError:
                                   pass
-                                                               
                               else:
                                 print(shutil.SameFileError)
                                 print('Directory Path for archive backup has not provided ')
-                                
-                                  
-                              #shutil.copy(i, sys.argv[1])
-                              #archivePath()
                   print()
                   print("Next dir for finding files is : - ")
                   
 print('\n' * 2)
-
-#listingFileFunct1()
-
 
 def main():
   if len(sys.argv) > 1:
@@ -60,8 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
