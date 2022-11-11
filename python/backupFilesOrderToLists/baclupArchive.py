@@ -18,13 +18,13 @@ def listingFileFunct1():
                   for root, dirnames, filenames in os.walk(var_file.rstrip().decode("utf-8")):
                         for filename in fnmatch.filter(filenames, var_path.rstrip().decode("utf-8")):
                               collected.append(os.path.join(root, filename))
-                  for i in collected:
+                  for item_dirs in collected:
                         if var_path.rstrip().decode("utf-8")[-3:] in i:
-                              print(i)
+                              print(item_dirs)
                              
                               if len(sys.argv) > 1:
                                 try:
-                                  shutil.copy(i, sys.argv[1])
+                                  shutil.copy(item_dirs, sys.argv[1])
                                 except shutil.SameFileError:
                                   pass
                               else:
