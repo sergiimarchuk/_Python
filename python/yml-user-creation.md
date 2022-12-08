@@ -119,7 +119,8 @@ def CheckerYmlFile():
                 CreateYml()
 CheckerYmlFile()
 
-def checklog_file():
+def main():
         with open (checklog_file_, 'a') as f: f.write (str(dict_user) + '\n')
 
-checklog_file()
+if __name__ == "__main__":
+    main()
