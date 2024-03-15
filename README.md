@@ -8,6 +8,6 @@ This Python script facilitates the search and archival of specific files within 
 
 # User Creation YAML Generator
 
-https://github.com/sergiimarchuk/migration_sox_java_python_sqlite/tree/master/user_add_yml
+https://github.com/sergiimarchuk/migration_sox_java_python_sqlite/blob/master/user_add_yml/user_add_intercative_mode_create_to_yml
 
 This Python script facilitates the creation of YAML files for Ansible, enabling the configuration of user settings based on user input. It prompts users to provide details such as usernames, email addresses, shell preferences, and group memberships. The script securely generates passwords and logs user inputs for record-keeping.
